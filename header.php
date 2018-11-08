@@ -487,7 +487,7 @@
 		}
 		?>
 
-		<?php if( !is_page_template('page-member-dashboard.php') ) {?>
+		<?php if( !is_page_template( array('page-member-dashboard.php', 'page-update-dashboard.php') ) ) {?>
 
 			<?php if ( !is_page_template('page-blank.php')  ) {
 				if ( hb_options('hb_header_layout_style') != "left-panel" ) { ?>
@@ -506,13 +506,13 @@
 			<?php } ?>
 		<?php } ?>
 
-		<?php if ( is_page_template('page-member-dashboard.php') ) { ?>
+		<?php if( is_page_template( array('page-member-dashboard.php', 'page-update-dashboard.php') ) ) { ?>
 		<!-- BEGIN .member-dashboard-wrapper -->
 		<div class="member-dashboard-wrapper">
 			<div class="member-dashboard-navigation">
 				<div class="sidemenu">
 					<?php
-					$logo_url = hb_options('hb_logo_option');
+					$logo_url = hb_options('hb_logo_light_option');
 					$alternative_url = vp_metabox('misc_settings.hb_page_alternative_logo');
 					if ($alternative_url) { ?>
 	                    <img src="<?php echo $alternative_url ?>" class="default alternative-logo" alt="<?php echo $site_name; ?>"/>

@@ -22,3 +22,16 @@ Template:     HighendWP
 #main.member-dashboard-header.user-fullname a {
 	color:fff !important;
 }
+
+
+.member-content-area .page-section ol, .member-content-area .page-section ul {
+    padding-left: 50px;
+}
+.member-content-area .page-section ol li {
+    list-style: decimal;
+    padding-bottom: 15px;
+}
+
+.member-content-area .page-section a {
+    color: #0f76bd;
+}

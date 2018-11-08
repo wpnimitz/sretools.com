@@ -59,7 +59,7 @@ if ( hb_options("hb_footer_bg_image") ){
 ?>
 
 <!-- BEGIN #footer OPTION light-style -->
-<?php if ( !is_page_template('page-member-dashboard.php') ) { ?> 
+<?php if ( !is_page_template( array('page-member-dashboard.php', 'page-update-dashboard.php') ) ) { ?> 
 <footer id="footer" class="dark-style<?php echo $footer_bg_image; ?>" <?php echo $footer_bg; ?>>
 	
 	<!-- BEGIN .container -->

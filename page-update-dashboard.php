@@ -1,7 +1,7 @@
 <?php
 /**
  Author = Nimitz Batioco
- Template Name: Member Dashboard
+ Template Name: Updated Dashboard
 */
 
 //custom variables
