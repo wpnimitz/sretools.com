@@ -26,6 +26,15 @@ Template:     HighendWP
 
 
 /** Member Dashboard **/
+.mobile-only {
+	display: none;
+}
+span.mobile-only a {
+    color: #fff;
+    font-size: 36px;
+}
+
+
 .member-content-area .page-section ol, .member-content-area .page-section ul {
     padding-left: 50px;
 }
@@ -45,9 +54,35 @@ Template:     HighendWP
 .sidemenu .widget_nav_menu ul.menu li a {
     background: #292929 !important;
     color: #fff !important;
+    padding: 15px 20px !important;
+    line-height: 30px;
 }
 
 .sidemenu .widget_nav_menu ul.menu li.current-menu-item a {
     background: #5aa92b !important;
     border-left: 0 !important;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.mobile-only {
+		display: initial;
+	}
+
+	.mobile-logo-wrapper img {
+	    max-height: 60px;
+	    width: auto;
+	    padding: 5px 10px !important;
+	    max-width: 90%;
+	    max-width: calc(98% - 42px);
+	}
+
+	.mobile-menu-wrapper {
+	    line-height: 60px;
+	    float: right;
+	    margin-right: 2%;
+	}
 }

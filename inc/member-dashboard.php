@@ -11,6 +11,7 @@ function cd_meta_box_add()
 function wnhq_updated_dashboard( $post ) {
     $values = get_post_custom( $post->ID );
     $selected = isset( $values['page_member_dashboard'] ) ? esc_attr( $values['page_member_dashboard'][0] ) : 'empty';
+    $kb_url = isset( $values['page_member_knowledgebase'] ) ? esc_attr( $values['page_member_knowledgebase'][0] ) : '';
 
     // We'll use this nonce field later on when saving.
     wp_nonce_field( 'my_meta_box_nonce', 'meta_box_nonce' );
@@ -23,7 +24,15 @@ function wnhq_updated_dashboard( $post ) {
         <select name="page_member_dashboard" id="page_member_dashboard">
             <?php echo select_sidebars($selected); ?>
         </select>
-        <?php echo $selected; ?>
+    </p>
+    <p style="margin-left: 15px;">
+        <label for="page_member_knowledgebase">Enter URL to Change Default Knowlege Base?</label><br>
+        <input type="text" name="page_member_knowledgebase" id="page_member_knowledgebase" value="<?php echo $kb_url; ?>">
+    </p>
+
+    <p style="margin-left: 15px;">
+        <label for="page_profile_url">Enter URL to Change profile page in next to the kb.</label><br>
+        <input type="text" name="page_profile_url" id="page_profile_url" value="<?php echo $kb_url; ?>">
     </p>
     <?php    
 }
@@ -54,6 +63,12 @@ function qnhq_save_updated_dashboard( $post_id )
          
     if( isset( $_POST['page_member_dashboard'] ) )
         update_post_meta( $post_id, 'page_member_dashboard', esc_attr( $_POST['page_member_dashboard'] ) );
+
+    if( isset( $_POST['page_member_knowledgebase'] ) )
+        update_post_meta( $post_id, 'page_member_knowledgebase', esc_attr( $_POST['page_member_knowledgebase'] ) );
+
+    if( isset( $_POST['page_profile_url'] ) )
+        update_post_meta( $post_id, 'page_profile_url', esc_attr( $_POST['page_profile_url'] ) );
          
     // This is purely my personal preference for saving check-boxes
     //$chk = isset( $_POST['my_meta_box_check'] ) && $_POST['page_member_dashboard'] ? 'on' : 'off';

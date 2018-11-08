@@ -542,9 +542,11 @@
 	                    <img src="<?php echo $alternative_url ?>" class="default alternative-logo" alt="<?php echo $site_name; ?>"/>
 	                <?php } else { ?>
 
-	                <span class="hb-dark-logo hb-visible-logo hb-logo-wrap">
+	                <span class="mobile-logo-wrapper hb-dark-logo hb-visible-logo hb-logo-wrap">
 	                    <img src="<?php echo $logo_url; ?>" width="318" height="72" class="default" alt="<?php echo $site_name; ?>"/>
 	                </span>
+
+	                <span class="mobile-menu-wrapper mobile-only"><a href="#" id="show-member-dashboard"><i class="icon-bars"></i></a></span>
 	                <?php } ?>
 	                <?php 
 	                	if( !empty($page_member_dashboard) || $page_member_dashboard != 'empty' ) {
@@ -554,6 +556,8 @@
 	                	}
 	                 ?>
 				</div>
+
+
 			</div>
 		<?php } ?>
 
