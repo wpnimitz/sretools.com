@@ -1,0 +1,910 @@
+/*** MemberDev CSS  CUSTOMIZATIONS FOR MEMBERMOUSE ***/
+
+/* Author: MemberDev
+/* Author URI: https://memberdev.com/
+/*
+
+/* ---------- global ---------- */
+.hr-full {
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.color-white {color: #fff !important;}
+.color-green {color: #6DAB3C !important;}
+
+/* buttons */
+.btn {
+	display: inline-block;
+	padding: 12px 30px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+}
+.btn.btn-green {
+	background: #6DAB3C;
+	color: #fff;
+}
+.btn.btn-green:hover {
+	background: #360;
+}
+.btn.btn-block {
+	display: block;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* icons */
+.icon-left {
+	margin-right: 5px;
+}
+.icon-right {
+	margin-left: 5px;
+}
+
+/* check list */
+.check-list {
+	list-style: none;
+	font-weight: 700;
+	line-height: 1.4;
+	color: #333;
+	margin: 0 0 20px;
+}
+.check-list li {
+	position: relative;
+	padding: 15px 0 15px 30px;
+	border-top: 1px solid rgba(0, 0, 0, .15);
+}
+.check-list li i {
+	position: absolute;
+	top: 16px;
+	left: 0;
+	width: 20px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.headline {
+	font-size: 1.5em;
+}
+
+/* video container */
+.md-video-container {
+	position: relative;
+	height: 0;
+	padding-bottom: 51%; /* 16:9 */
+	padding-top: 50px;
+	margin: 0 0 15px;
+	background: url(images/loading-squares.gif) center center 100px 100px no-repeat #000;
+}
+.md-video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+/* responsive grid */
+.rsp-grid {
+	font-size: 0;
+	margin-left: -2%;
+}
+.rsp-grid .grid-container {
+	display: inline-block;
+	font-size: 16px;
+	font-size: 1rem;
+	margin: 0 0 0 2%;
+	vertical-align: top;
+}
+.rsp-grid .grid-container.container-25 {
+	width: 23%;
+}
+.rsp-grid .grid-container.container-33 {
+	width: 31.33%;
+}
+.rsp-grid .grid-container.container-50 {
+	width: 48%;
+}
+.rsp-grid .grid-container.container-66 {
+	width: 64.66%;
+}
+
+/* ---------- header ---------- */
+.page-template-page-checkout #hb-header {
+	display: none; /* hide site header on checkout page */
+}
+
+/* ---------- page sections ---------- */
+.page-section h1 {
+	font-weight: 700;
+	margin: 0 0 30px; 
+}
+.page-section {
+	padding: 30px 0;
+}
+.page-section.section-auth {
+	padding: 50px 0;
+    background: url(https://thesmartofferplatform.com/wp-content/uploads/2018/02/Dollarphotoclub_58725992-2k-dark.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/* ---------- checkout ---------- */
+.md-checkout {
+	padding: 30px;
+	margin: 30px auto;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, .15);
+}
+.md-checkout br {
+	display: none;
+}
+
+.md-checkout.checkout-guest #mm-field-password {
+	display: none;
+}
+
+/* checkout columns */
+.md-checkout.checkout-columns {
+	padding: 0;
+}
+.md-checkout.checkout-columns .mm-checkoutContainer {
+	margin: 0;
+}
+.md-checkout.checkout-columns .mm-checkoutContainer .mm-formError {
+	padding: 10px;
+	margin: 0;
+	font-size: 1em;
+	border-radius: 0;
+}
+/* margin out all p's to avoid WP spacing issues */
+.md-checkout.checkout-columns p {
+	font-size: 1em;
+	margin: 0 0 15px;
+}
+.md-checkout.checkout-columns p.headline {
+	font-size: 1.2em;
+}
+/* add back margin to specific p's */
+.md-checkout.checkout-columns .mm-productDesc,
+.md-checkout.checkout-columns .checkout-terms {
+	margin: 0 0 10px;
+}
+.checkout-column {
+	display: table-cell;
+	padding: 50px;
+	vertical-align: top;
+}
+.checkout-column.column-product {
+	width: 45%;
+	background: #333;
+}
+.checkout-column.column-product img {
+	display: block;
+	width: 250px;
+	margin: 0 0 20px;
+}
+.checkout-column.column-product .mm-checkoutSection {
+	padding: 0;
+}
+.checkout-column.column-product .section-image {
+	display: block;
+	margin: 0 0 15px;
+}
+.checkout-column.column-product hr {
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+}
+.checkout-column.column-product .product-label {
+	display: block;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0 0 15px;
+}
+.checkout-column.column-product .product-title {
+	font-weight: 700;
+	line-height: 1.2;
+	color: #fff;
+}
+.checkout-column.column-product p {
+	color: rgba(255, 255, 255, .5);
+}
+.checkout-column.column-product .mm-productDesc {
+	color: #fff;
+}
+.checkout-column.column-product a:hover {
+	color: #fff;
+}
+.checkout-column.column-payment {
+	width: 55%;
+	background: #fff;
+}
+.checkout-column.column-payment .row {
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.checkout-column.column-payment .row > [class^="col-"] {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.checkout-column.column-payment input {
+	outline: none;
+}
+.checkout-column.column-payment .mm-checkoutInfoBlock {
+	padding: 0;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+}
+.checkout-column.column-payment .mm-checkoutInfoBlock h3 {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+}
+.checkout-column.column-payment .mm-checkoutInfoBlock .mm-ccLogos img {
+	width: 166px;
+	margin: 0 0 10px;
+}
+.checkout-column.column-payment .mm-checkoutInfoBlock .billing-details {
+	font-size: 1em;
+	text-transform: none;
+}
+.checkout-column.column-payment .mm-paymentbuttons {
+	margin: 0 0 20px;
+}
+.checkout-column.column-payment .mm-paymentbuttons .mm-button {
+	display: block;
+	width: auto !important;
+}
+.checkout-column.column-payment .checkout-disclaimer {
+	padding: 15px;
+	margin: 0 0 15px;
+	border: 1px solid #ccc;
+}
+.checkout-column.column-payment .checkout-disclaimer .disclaimer-link {
+	font-size: .9em;
+	font-weight: 700;
+	margin: 0 0 10px;
+}
+.checkout-column.column-payment .checkout-disclaimer label {
+	display: block;
+}
+.checkout-column.column-payment .checkout-disclaimer .mm-remember-me {
+	margin: 10px 0 0 !important;
+}
+
+.g-recaptcha {
+	margin: 0 0 20px;
+}
+
+.md-checkout.checkout-columns p.checkout-detail {
+	font-size: .8em;
+	margin: 0 0 10px;
+}
+.md-checkout.checkout-columns p.checkout-security {
+	position: relative;
+	font-size: 1em;
+	font-weight: 700;
+	padding-left: 22px;
+	margin: 0 0 10px;
+}
+.md-checkout.checkout-columns p.checkout-security i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 1.4em;
+}
+.md-checkout.checkout-columns p.checkout-terms {
+	font-size: .75em;
+}
+
+/* ---------- Metrics ---------- */
+.metric {
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px 15px 90px;
+	border-left: 1px solid #ccc;
+	vertical-align: top;
+}
+.metric .metric-icon {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	width: 60px;
+	font-size: 3.5em;
+	line-height: 1;
+	text-align: center;
+	color: #aaa;
+}
+.metric .metric-label {
+	display: block;
+	font-size: .85em;
+	font-weight: 900;
+	color: #434c6d;
+	margin: 0 0 10px;
+}
+.metric .metric-value {
+	display: block;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 10px;
+}
+.metric .metric-value.value-small {
+	font-size: 1.2em;
+}
+/* no icon metrics */
+.metric.metric-no-icon {
+	padding: 15px 30px 15px 20px;
+}
+
+/* ---------- footer ---------- */
+.page-template-page-checkout #footer {
+	display: none; /* hide site footer on checkout page */
+}
+
+/* ---------- MemberMouse ---------- */
+#mm-preview-settings-bar {
+	top: auto !important;
+	bottom: 0;
+	height: 38px;
+	background: #000;
+}
+#mm-preview-settings-bar select {
+	width: auto !important;
+	height: auto !important;
+	padding: 5px 30px 5px 10px !important;
+}
+#mm-preview-settings-bar .mm-button.small {
+	padding: 0 10px;
+}
+
+/* ----- General styles ----- */
+.mm-button {
+	font-family: 'Lato', sans-serif !important;
+	font-weight: 700 !important;
+	line-height: inherit !important;
+	color: #fff !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+	border-radius: 4px !important;
+}
+.mm-button.large {
+	padding: 15px !important;
+}
+.mm-button.green {
+	background: #6DAB3C !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+.mm-button.green:hover {
+	background: #360 !important;
+	color: #fff !important;
+}
+.mm-button.orange {
+	background: #f60 !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+.mm-button.orange:hover {
+	background: #c60 !important
+}
+.mm-button.purple {
+	background: #c6f !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+.mm-button.purple:hover {
+	background: #93c !important;
+}
+.mm-button.button-disabled {
+	background: #ccc !important;
+	color: #999 !important;
+	cursor: context-menu;
+}
+.mm-button.button-disabled:hover {
+	background: #bbb !important;
+}
+.mm-error {
+	padding: 5px 10px !important;
+	margin: 0 0 20px !important;
+	background: #c00 !important;
+	color: #fff !important;
+	font-size: .85em !important;
+	border: none !important;
+	border-radius: 0 !important;
+	text-shadow: none !important;
+}
+.mm-success {
+	padding: 5px 10px !important;
+	margin: 0 0 20px !important;
+	background: #9c0 !important;
+	color: #fff !important;
+	font-size: .85em !important;
+	border: none !important;
+	border-radius: 0 !important;
+	text-shadow: none !important;
+}
+
+/* ----- Checkout pages ----- */
+.mm_left_column,
+.mm_right_column {
+	float: none !important;
+	display: table-cell;
+	padding: 30px;
+	margin: 0 !important;
+	vertical-align: top;
+}
+.mm_right_column {
+	background: #eee;
+}
+.mm-checkoutContainer {
+	max-width: inherit !important;
+	font-size: 100% !important;
+	color: #333;
+	margin: 20px auto;
+}
+.mm-checkoutContainer .mm-checkoutInfoBlock {
+	padding: 0 !important;
+	border: none !important;
+	border-radius: 0 !important;
+	overflow: hidden !important;
+}
+.mm-checkoutContainer p.mm-formError, .mm-formError {
+	font-size: 21px;
+	background: #CC3C3F;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.25);		
+}
+.mm-checkoutContainer h3 {
+	font-size: 1.2em !important;
+	font-weight: 700;
+}
+.mm-checkoutContainer #mm_field_billing_state_dd,
+.mm-checkoutContainer #mm_field_billing_country,
+.mm-checkoutContainer #mm_field_shipping_method,
+.mm-checkoutContainer #mm_field_shipping_state_dd,
+.mm-checkoutContainer #mm_field_shipping_country {
+	width: 100%;
+	height: 46px;
+}
+.mm-checkoutContainer .mm-formField {
+	padding: 0;
+	margin: 0 0 12px;
+	overflow: inherit;
+}
+.mm-checkoutContainer .mm-formField label {
+	display: none;
+	width: auto;
+	float: none !important;
+}
+.mm-checkoutContainer .mm-formField label.mandatory {
+	display: block;
+	font-weight: 700;
+	margin: 0 0 10px;
+}
+.mm-checkoutContainer .mm-formField.field-shipping-same {
+	position: relative;
+	padding-left: 25px;
+}
+.mm-checkoutContainer .mm-formField.field-shipping-same input {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	margin: 0;
+}
+.mm-checkoutContainer .mm-selectList {
+	width: auto;
+	padding-right: 35px !important;
+	margin-right: 10px;
+}
+.mm-checkoutContainer .mm-checkoutSection2,
+.mm-checkoutContainer .mm-purchaseSection {
+	margin: 0 0 15px;
+}
+.mm-checkoutContainer .mm-checkoutSection2 h2 {
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 1.2;
+}
+.mm-checkoutContainer .mm-free-trial {
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: -2px;
+	text-transform: uppercase;
+	color: #f66d37;
+}
+.mm-checkoutContainer .mm-productDesc {
+	font-style: normal;
+}
+.mm-checkoutContainer .mm-ccLogos img {
+	width: 162px;
+}
+.mm-checkoutContainer .table {
+	font-size: .9em;
+	color: #fff;
+	margin: 30px 0;
+	border: none !important;
+	border-bottom: 1px solid rgba(255, 255, 255, .15) !important;
+}
+.mm-checkoutContainer .table th,
+.mm-checkoutContainer .table td {
+	padding: 10px 0;
+	border: none;
+	border-top: 1px solid rgba(255, 255, 255, .15);
+}
+.mm-checkoutContainer .table th {
+	width: 120px;
+	font-weight: 700;
+	color: #fff;
+}
+p.checkout-terms {
+	font-size: .75em;
+	color: #aaa;
+	margin: 0 0 10px;
+}
+p.checkout-terms a {
+	color: #333;
+}
+p.checkout-security {
+	position: relative;
+	padding: 0 0 0 20px;
+    color: #333;
+}
+p.checkout-security i {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	font-size: 1.2em;
+}
+
+.mm-paypalCheckoutBtn {
+	width: auto !important;
+	height: auto !important;
+	padding: 15px;
+	margin: 15px 0 0;
+	background: #009cde !important;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 5px;
+}
+.mm-paypalCheckoutBtn:before {
+	content: "Sign Up with PayPal";
+}
+.mm-paypalCheckoutBtn:hover {
+	background: #0070ba !important;
+	color: #fff;
+	text-decoration: none;
+}
+
+.mm-giftsection {
+	margin: 0 0 20px;
+}
+
+.mm-couponSection .mm-formField {
+	position: relative;
+}
+.mm-couponSection .mm-formField .mm-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 3px 10px !important;
+	background: none !important;
+	color: #08c !important;
+	border: 1px solid #08c !important;
+	border-radius: 2px !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	text-transform: uppercase;
+	z-index: 10;
+}
+.mm-couponSection .mm-button:hover {
+	background: #08c !important;
+	color: #fff !important;
+}
+.mm-couponSection .mm-couponSuccessMessage,
+.mm-couponSection .mm-couponErrorMessage {
+	display: block;
+	font-size: .85em;
+	border-radius: 0;
+	text-shadow: none;
+}
+
+/* ----- My Account page ----- */
+.mm-myaccount {
+	font-size: 1em !important;
+}
+.mm-myaccount-module {
+	margin: 0 0 20px !important;
+	background: #fff !important;
+	border: 1px solid #ccc !important;
+	border-radius: 0 !important;
+}
+.mm-myaccount-module br {
+	display: none;
+}
+.mm-myaccount-module-header {
+	position: relative;
+	font-size: 1em;
+	font-size: 1.2em !important;
+	font-weight: 700;
+	letter-spacing: -0.025em;
+	line-height: 1.2;
+	padding: 20px 150px 20px 55px !important;
+	color: #333 !important;
+	background: #f5f5f5 !important;
+	border-bottom: 1px solid #ddd;
+}
+.mm-myaccount-module-header .mm-update-button {
+	position: absolute;
+	top: 13px;
+	right: 15px;
+	padding: 6px 20px !important;
+	font-weight: 700 !important;
+	background: none !important;
+	color: #333 !important;
+	border: 2px solid rgba(0, 0, 0, .35);
+	border-radius: 100px !important;
+}
+.mm-myaccount-module-header .mm-update-button:hover {
+	background: #333 !important;
+	color: #fff !important;
+}
+.mm-myaccount-module-header img {
+	display: inline-block;
+	vertical-align: top !important;
+	margin: 1px 0 0 !important;
+}
+.mm-myaccount-module-header i {
+	position: absolute !important;
+	top: 20px !important;
+	left: 15px;
+	width: 30px;
+	font-weight: 300;
+	line-height: 1;
+	text-align: center;
+	margin: 0;
+	color: #333 !important;
+}
+.mm-myaccount-content-wrapper {
+	padding: 15px !important;
+}
+.mm-myaccount-content-wrapper p {
+	font-size: .85em;
+	margin: 0 0 10px !important;
+}
+.mm-myaccount-content-wrapper table {
+	table-layout: fixed;
+	width: 100%;
+	font-size: .85em;
+}
+.mm-myaccount-content-wrapper table th,
+.mm-myaccount-content-wrapper table td {
+	padding: 10px 0;
+	vertical-align: middle;
+}
+.mm-myaccount-content-wrapper table tbody th,
+.mm-myaccount-content-wrapper table tbody td {
+	border-top: 1px solid #ddd;
+}
+.mm-myaccount-content-wrapper table tr th:last-child,
+.mm-myaccount-content-wrapper table tr td:last-child {
+	text-align: right;
+}
+.mm-myaccount-content-wrapper .cta-button {
+	font-size: 1.2em;
+}
+.mm-myaccount-label {
+	display: inline-block;
+	width: 140px;
+	font-weight: bold;
+	color: #333;
+}
+.mm-update-button {
+	font-size: .8em !important;
+	font-variant: normal !important;
+	background: #1bb1e7 !important;
+	padding: 5px 15px !important;
+	color: #eee !important;
+	vertical-align: top;
+}
+.mm-update-button:hover {
+	text-decoration: none !important;
+	color: #fff !important;
+	background: #08c !important;
+}
+
+/* hide default Order History section since we custom query */
+#mm-order-history-section {
+	display: none;
+}
+
+/* jquery UI dialog styling */
+.mm-myaccount-dialog-section-header {
+	font-family: 'Lato', sans-serif !important;
+	font-size: 1em;
+	font-size: .85em !important;
+	font-weight: 700;
+	background: none !important;
+	color: #333 !important;
+	padding: 0 !important;
+	border-radius: 0 !important;
+	text-shadow: none !important;
+}
+#mm-form-container td {
+	padding: 5px 0;
+}
+#mm-payment-confirmation-dialog form {
+	padding: 0 0 20px;
+	margin: 0 0 20px;
+	line-height: 1.4;
+	border-bottom: 1px solid #ddd;
+}
+#mm-payment-confirmation-dialog form .mm-data {
+	font-weight: 700;
+}
+
+.mm-dialog-button-container {
+	float: none !important;
+}
+.mm-dialog-button-container .mm-ui-button {
+	font-size: 1em;
+	font-size: .85em !important;
+	font-weight: 700;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	margin: 0;
+	border: 1px solid #ccc;
+}
+.mm-dialog-button-container .mm-ui-button:hover {
+	background: #eee;
+	color: #333;
+}
+.mm-dialog-button-container .mm-ui-button.blue {
+	background: #d82027;
+	border: 1px solid #d82027;
+}
+.mm-dialog-button-container .mm-ui-button.blue:hover {
+	background: #611e2d;
+	color: #fff;
+}
+.mm-dialog-button-bar {
+	text-align: left !important;
+}
+.mm-dialog-button-bar .mm-button {
+	background: none;
+}
+
+.mm-update-subscription-button {
+	color: #08c !important;
+}
+.mm-cancel-membership-button,
+.mm-cancel-subscription-button,
+.mm-update-subscription-button {
+	font-size: 1em !important;
+	color: #1bb1e7 !important;
+}
+
+/* ----- Login/Password pages ----- */
+.mm-login,
+.mm-forgot-password,
+.mm-resetpassword {
+	width: auto !important;
+}
+.mm-login tr,
+.mm-forgot-password tr ,
+.mm-resetpassword tr {
+	height: auto !important;
+	margin: 0 0 20px;
+}
+.mm-login table tr,
+.mm-login table th,
+.mm-login table td,
+.mm-forgot-password table tr,
+.mm-forgot-password table th,
+.mm-forgot-password table td,
+.mm-resetpassword table tr,
+.mm-resetpassword table th,
+.mm-resetpassword table td {
+	display: block;
+	padding: 0;
+}
+.mm-login .mm-label-column,
+.mm-forgot-password .mm-label-column,
+.mm-resetpassword .mm-label-column {
+	width: auto !important;
+	padding: 0;
+	margin: 0 0 5px;
+	font-weight: 700;
+	color: #333;
+}
+.mm-login .mm-field,
+.mm-forgot-password .mm-field,
+.mm-resetpassword .mm-field {
+	width: 100% !important;
+	margin: 0 0 10px;
+}
+.mm-login .mm-label {
+	display: block;
+	font-weight: 700;
+	margin: 0 0 5px;
+}
+.mm-remember-me {
+	position: relative;
+	font-size: .85em;
+	font-weight: 300;
+	line-height: 1.4;
+	margin: 20px 0 !important;
+	padding-left: 20px;
+}
+.mm-remember-me br {
+	display: none;
+}
+.mm-remember-me input[type="checkbox"] {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	margin: 0 !important;
+}
+.mm-login .mm-remember-me {
+	padding-left: 35px;
+}
+#mm-login-button,
+#mm-submit-button {
+	width: 100% !important;
+}
+
+.login-form {
+	padding: 40px;
+	background: #fff;
+	border: 2px solid #eee;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+	
+	/* grids */
+	.rsp-grid {
+		margin-left: 0;
+	}
+	.rsp-grid .grid-container {
+		display: block;
+		width: 100% !important;
+		margin: 0;
+	}
+
+	/* checkout */
+	.checkout-column {
+		display: block;
+	}
+	.checkout-column.column-product,
+	.checkout-column.column-payment {
+		width: auto;
+	}
+
+}
+
+/* SUPER MOBILE */
+@media (max-width: 600px) {
+
+	/* checkout */
+	.checkout-column.column-product,
+	.checkout-column.column-payment {
+		padding: 30px;
+	}
+
+}
+
+/*** MemberDev CSS  END CUSTOMIZATIONS FOR MEMBERMOUSE ***/
