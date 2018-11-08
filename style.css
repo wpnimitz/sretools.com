@@ -24,6 +24,8 @@ Template:     HighendWP
 }
 
 
+
+/** Member Dashboard **/
 .member-content-area .page-section ol, .member-content-area .page-section ul {
     padding-left: 50px;
 }
@@ -34,4 +36,18 @@ Template:     HighendWP
 
 .member-content-area .page-section a {
     color: #0f76bd;
+}
+
+.sidemenu .widget_nav_menu ul.menu {
+    border: 0;
+}
+
+.sidemenu .widget_nav_menu ul.menu li a {
+    background: #292929 !important;
+    color: #fff !important;
+}
+
+.sidemenu .widget_nav_menu ul.menu li.current-menu-item a {
+    background: #5aa92b !important;
+    border-left: 0 !important;
 }

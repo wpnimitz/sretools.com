@@ -1,4 +1,6 @@
 <?php
+include("inc/member-dashboard.php");
+
 add_action('wp_enqueue_scripts', 'sretools_assets');
 function sretools_assets() {
 	$version = "1.0.0." . strtotime("now");
@@ -11,3 +13,5 @@ function register_my_menu() {
   register_nav_menu('member-dashboard-menu',__( 'Member Dashboard Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+

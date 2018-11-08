@@ -506,7 +506,7 @@
 			<?php } ?>
 		<?php } ?>
 
-		<?php if( is_page_template( array('page-member-dashboard.php', 'page-update-dashboard.php') ) ) { ?>
+		<?php if( is_page_template( 'page-member-dashboard.php' ) ) {  ?>
 		<!-- BEGIN .member-dashboard-wrapper -->
 		<div class="member-dashboard-wrapper">
 			<div class="member-dashboard-navigation">
@@ -522,7 +522,37 @@
 	                    <img src="<?php echo $logo_url; ?>" width="318" height="72" class="default" alt="<?php echo $site_name; ?>"/>
 	                </span>
 	                <?php } ?>
-					<?php wp_nav_menu( array( 'theme_location' => 'member-dashboard-menu' ) ); ?>
+	                <?php   wp_nav_menu( array( 'theme_location' => 'member-dashboard-menu' ) ); ?>
+				</div>
+			</div>
+		<?php } ?>
+
+
+		<?php if( is_page_template( 'page-update-dashboard.php' ) ) { 
+			$page_member_dashboard = get_post_meta(get_the_ID(), 'page_member_dashboard', true);
+			?>
+		<!-- BEGIN .member-dashboard-wrapper -->
+		<div class="member-dashboard-wrapper">
+			<div class="member-dashboard-navigation">
+				<div class="sidemenu">
+					<?php
+					$logo_url = hb_options('hb_logo_light_option');
+					$alternative_url = vp_metabox('misc_settings.hb_page_alternative_logo');
+					if ($alternative_url) { ?>
+	                    <img src="<?php echo $alternative_url ?>" class="default alternative-logo" alt="<?php echo $site_name; ?>"/>
+	                <?php } else { ?>
+
+	                <span class="hb-dark-logo hb-visible-logo hb-logo-wrap">
+	                    <img src="<?php echo $logo_url; ?>" width="318" height="72" class="default" alt="<?php echo $site_name; ?>"/>
+	                </span>
+	                <?php } ?>
+	                <?php 
+	                	if( !empty($page_member_dashboard) || $page_member_dashboard != 'empty' ) {
+	                		dynamic_sidebar( $page_member_dashboard );
+	                	} else {
+	                		wp_nav_menu( array( 'theme_location' => 'member-dashboard-menu' ) );
+	                	}
+	                 ?>
 				</div>
 			</div>
 		<?php } ?>
